@@ -2,6 +2,7 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --button-light-color: #F5F4FA;
 }
 
 body {
@@ -16,8 +17,33 @@ ul {
 .logo {
 
 }
+/* Button */
 
+.button {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.button.primary {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--button-light-color);
+}
+
+.filter-section button:hover,
+.filter-section button:focus {
+    color: white;
+    background-color: var(--accent-color);
+}
 /* Site nav */
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
 .site-nav a{
 color: var(--title-text-color);
@@ -34,6 +60,25 @@ color: var(--title-text-color);
 
 .contact-nav a:hover,
 .contact-nav a:focus {
+    color: var(--accent-color);
+    }
+    
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.actual-address {
+    color: white;
+}
+
+.contact {
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+.contact-footer a:hover,
+.contact-footer a:focus {
     color: var(--accent-color);
     }
 /* hero */
@@ -63,3 +108,8 @@ color: var(--title-text-color);
  color: var(--title-text-color);
 }
 
+/* Prtfolio style */
+
+.portfolio-list .title {
+    color: var(--title-text-color);
+   }
